@@ -698,6 +698,8 @@ function Kavo.CreateLib(kavName, themeList)
     local pages = Instance.new("Frame")
     local Pages = Instance.new("Folder")
     local infoContainer = Instance.new("Frame")
+    local Toggle = Instance.new("ImageButton")
+    local Corner = Instance.new("UICorner")
 
     local blurFrame = Instance.new("Frame")
 
@@ -737,6 +739,21 @@ function Kavo.CreateLib(kavName, themeList)
     headerCover.CornerRadius = UDim.new(0, 4)
     headerCover.Name = "headerCover"
     headerCover.Parent = MainHeader
+
+    Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Toggle.Position = UDim2.new(0.469575197, 0, 0.0330033004, 0)
+Toggle.Size = UDim2.new(0,50,0,50)
+Toggle.ZIndex = 2
+Toggle.Image = "rbxassetid://7743870134"
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+ end)
+
+Corner.Name = "Corner"
+Corner.Parent = Toggle
 
     coverup.Name = "coverup"
     coverup.Parent = MainHeader
