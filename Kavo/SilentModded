@@ -749,7 +749,11 @@ Toggle.ZIndex = 2
 Toggle.Image = "rbxassetid://7743870134"
 Toggle.Draggable = true
 Toggle.MouseButton1Click:connect(function()
-    Library:ToggleUI()
+    if Main.Visible == true then
+			Main.Visible = false
+		elseif Main.Visible == false then
+			Main.Visible = true
+	end
  end)
 
 Corner.Name = "Corner"
