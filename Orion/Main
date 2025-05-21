@@ -53,9 +53,6 @@ local function GetIcon(IconName)
 end   
 
 
-MainWindow.Visible = false
-    UIHidden = true
-
 local Orion = Instance.new("ScreenGui")
 guiRH = Instance.new("ScreenGui",Orion)
 nextb = Instance.new("ImageButton", guiRH)
@@ -675,6 +672,9 @@ function OrionLib:MakeWindow(WindowConfig)
 		end
 		Minimized = not Minimized    
 	end)
+	
+	MainWindow.Visible = false
+    UIHidden = true
 	
 	AddConnection(CloseBtn.MouseButton1Up, function()
 	  MainWindow.Visible = false
