@@ -677,7 +677,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(CloseBtn.MouseButton1Up, function()
 	  MainWindow.Visible = false
 		UIHidden = true
-            nextb.Image = "rbxassetid://7072719338"
+  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://7072720870") or "rbxassetid://7072719338"
+  Orion.Frame1.Visible = not Orion.Frame1.Visible
 	end)
 
 
