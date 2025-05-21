@@ -673,8 +673,16 @@ function OrionLib:MakeWindow(WindowConfig)
 	end)
 	
 	AddConnection(CloseBtn.MouseButton1Up, function()
-	  OrionLib:MakeNotification({Name = "Silent Hub",Content = "Destroying the Script..." ,Image = "rbxassetid://",Time = 5})task.wait(1)
-	  Orion:Destroy()
+	  MainWindow.Visible = false
+		UIHidden = true
+		nextb.Image = (Orion.Frame1.Visible and "rbxassetid://7072720870") or "rbxassetid://7072719338"
+  Orion.Frame1.Visible = not Orion.Frame1.Visible
+  OrionLib:MakeNotification({
+			Name = "Interface Hidden",
+			Content = "Click Plus Button To Reopen The Interface",
+			Time = 5
+		})
+  WindowConfig.CloseCallback()
 	end)
 
 
