@@ -677,7 +677,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	  Orion:Destroy()
 	end)
 
-	OrionLib:MakeNotification({Name = "Silent Hub",Content = "Running script..." ,Image = "rbxassetid://",Time = 5})
+
 
 	local function LoadSequence()
 		MainWindow.Visible = false
