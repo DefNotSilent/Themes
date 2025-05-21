@@ -64,13 +64,13 @@ guiRH.Name = "Minimize"
 nextb.Position = UDim2.new(0,100,0,60)
 nextb.Size = UDim2.new(0,55,0,55)
 nextb.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-nextb.Image = "rbxassetid://7743870134"
+nextb.Image = "rbxassetid://86017226532045"
 nextb.Visible = true
 nextb.Active = true
 nextb.Draggable = true
 
 nextb.MouseButton1Down:connect(function()
-  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://7743870134") or "rbxassetid://7743870134"
+  nextb.Image = (Orion.Frame1.Visible and "rbxassetid://86017226532045") or "rbxassetid://86017226532045"
   Orion.Frame1.Visible = not Orion.Frame1.Visible
 end)
 
@@ -677,7 +677,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(CloseBtn.MouseButton1Up, function()
 	  MainWindow.Visible = false
 		UIHidden = true
-		OrionLib:MakeNotification({Name = "Silent Hub",Content = "Please Click On The Moon Icon To Reopen The Interface" ,Image = "rbxassetid://7743870134",Time = 5})
+		OrionLib:MakeNotification({Name = "Silent Hub",Content = "Please Click On The Tung Tung Tung Sahur Icon To Reopen The Interface" ,Image = "rbxassetid://7743870134",Time = 5})
 	end)
 
 
