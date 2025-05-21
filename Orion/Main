@@ -52,6 +52,10 @@ local function GetIcon(IconName)
 	end
 end   
 
+
+MainWindow.Visible = false
+    UIHidden = true
+
 local Orion = Instance.new("ScreenGui")
 guiRH = Instance.new("ScreenGui",Orion)
 nextb = Instance.new("ImageButton", guiRH)
