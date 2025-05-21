@@ -62,7 +62,7 @@ Orion.Name = "Silent Hub <Orion Lib>"
 
 guiRH.Name = "Minimize"
 nextb.Position = UDim2.new(0,100,0,60)
-nextb.Size = UDim2.new(0,40,0,40)
+nextb.Size = UDim2.new(0,55,0,55)
 nextb.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 nextb.Image = "rbxassetid://7743870134"
 nextb.Visible = true
