@@ -684,7 +684,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	UIButton.Active = true
 	UIButton.Name = "UIButton"
 	UIButton.Visible = false
-	UIButton.Size = AdjustSize(30, 35)
+	UIButton.Size = AdjustSize(120, 30)
 	UIButton.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 	UIButton.BackgroundTransparency = 0.2
 	UIButton.Position = UDim2.new(0.5, 0, 0, 0)
@@ -699,7 +699,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	UICorner.CornerRadius = UDim.new(0.3, 0)
 
 	Camera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
-		UIButton.Size = AdjustSize(30, 35)
+		UIButton.Size = AdjustSize(120, 30)
 	end)
 
 	AddConnection(CloseBtn.MouseButton1Click, function()
