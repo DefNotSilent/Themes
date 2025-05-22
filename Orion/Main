@@ -67,7 +67,7 @@ nextb.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 nextb.Image = "rbxassetid://7743870134"
 nextb.Visible = true
 nextb.Active = true
-nextb.Transparency = 0.7
+nextb.Transparency = 0.4
 nextb.Draggable = true
 
 nextb.MouseButton1Down:connect(function()
