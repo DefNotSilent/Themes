@@ -761,19 +761,6 @@ button.TextSize = 30
 button.Transparency = 0.2
 button.Draggable = true
 
-
-local corner = Instance.new("UICorner")
-corner.CornerRadius = UDim.new(1, 0)
-corner.Parent = button
-
-button.MouseEnter:Connect(function()
-    button.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-end)
-
-button.MouseLeave:Connect(function()
-    button.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
-end)
-
 button.MouseButton1Click:Connect(function()
      if Main.Visible == true then
 			Main.Visible = false
@@ -783,6 +770,11 @@ button.MouseButton1Click:Connect(function()
 end)
 
 button.Parent = screenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(1, 0)
+corner.Parent = button
+
 
 
 
