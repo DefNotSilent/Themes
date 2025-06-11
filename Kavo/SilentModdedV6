@@ -770,7 +770,11 @@ button.MouseLeave:Connect(function()
 end)
 
 button.MouseButton1Click:Connect(function()
-    game:GetService("StarterGui"):SetCore("DevConsoleVisible", true)
+     if Main.Visible == true then
+			Main.Visible = false
+		elseif Main.Visible == false then
+			Main.Visible = true
+	end
 end)
 
 button.Parent = screenGui
