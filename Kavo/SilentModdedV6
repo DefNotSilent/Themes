@@ -743,7 +743,12 @@ function Kavo.CreateLib(kavName, themeList)
     local Player = game:GetService("Players").LocalPlayer
 local PlayerGui = Player:WaitForChild("PlayerGui")
 
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "ToggleButton"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = PlayerGui
 
+local button = Instance.new("TextButton")
 button.Name = "ConsoleButton"
 button.Size = UDim2.new(0, 45, 0, 45)
 button.Position = UDim2.new(0, 10, 0, 40)
@@ -757,7 +762,7 @@ button.Transparency = 0.2
 button.Draggable = true
 
 
-
+local corner = Instance.new("UICorner")
 corner.CornerRadius = UDim.new(1, 0)
 corner.Parent = button
 
@@ -778,6 +783,8 @@ button.MouseButton1Click:Connect(function()
 end)
 
 button.Parent = screenGui
+
+
 
     coverup.Name = "coverup"
     coverup.Parent = MainHeader
