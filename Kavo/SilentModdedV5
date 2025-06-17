@@ -759,6 +759,20 @@ Toggle.MouseButton1Click:connect(function()
 Corner.Name = "Corner"
 Corner.Parent = Toggle
 
+local Stroke = Instance.new("UIStroke")
+Stroke.Name = "RainbowStroke"
+Stroke.Parent = Toggle
+Stroke.Thickness = 2
+Stroke.LineJoinMode = Enum.LineJoinMode.Round
+
+spawn(function()
+	while Stroke and Stroke.Parent do
+		local t = tick() * 0.5
+		Stroke.Color = Color3.fromHSV(t % 1, 1, 1)
+		wait(0.03)
+	end
+end)
+
     coverup.Name = "coverup"
     coverup.Parent = MainHeader
     coverup.BackgroundColor3 = themeList.Header
